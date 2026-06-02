@@ -3,33 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Electronics - Навушники</title>
+    <title>Best Electronics - Магазин навушників</title>
     <link rel="stylesheet" href="styles/STYLES-For_Page.css">
     <script src="scripts/SCRIPTS-For_Page.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="assets/images/logos/main-logo.svg" alt="Логотип сайту" class="logo">
-        <div class="icons">
-            <img src="assets/images/icons/search.svg" alt="Пошук">
-            <img src="assets/images/icons/profile.svg" alt="Профіль">
-            <img src="assets/images/icons/bag.svg" alt="Кошик">
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logos/main-logo.svg" alt="Best Electronics Logo">
+                <span>BestElectronics</span>
+            </a>
+            
+            <div class="nav-icons">
+                <button class="icon-btn" title="Пошук">
+                    <img src="assets/images/icons/search.svg" alt="Пошук">
+                </button>
+                <button class="icon-btn" title="Профіль">
+                    <img src="assets/images/icons/profile.svg" alt="Профіль">
+                </button>
+                <button class="icon-btn" title="Кошик" id="cartButton">
+                    <img src="assets/images/icons/bag.svg" alt="Кошик">
+                    <span class="cart-counter" id="cartCount">0</span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('assets/images/sections/hero/hero-bg.jpg');">
-            <h1>Найкращі навушники для вас</h1>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Відчуй кожну ноту</h1>
+                <p>Преміальні бездротові навушники для справжніх поціновувачів звуку. Обирай найкраще.</p>
+                <a href="#catalog" class="btn btn-primary">Перейти до каталогу</a>
+            </div>
         </section>
 
-        <section class="products">
-            <div class="product-card">
-                <img src="assets/images/electronics/sony-headphones.png" alt="Навушники Бренд 1">
-            </div>
-            <div class="product-card">
-                <img src="assets/images/electronics/jbl-headphones.png" alt="Навушники Бренд 2">
+        <section id="catalog" class="products-section">
+            <h2>Популярні моделі</h2>
+            <div class="products-grid">
+                
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/electronics/sony-headphones.png" alt="Навушники Sony">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sony WH-1000XM5</h3>
+                        <p class="product-desc">Шумозаглушення лідерського класу</p>
+                        <div class="product-bottom">
+                            <span class="price">14 999 ₴</span>
+                            <button class="btn btn-buy">Купити</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/electronics/jbl-headphones.png" alt="Навушники JBL">
+                    </div>
+                    <div class="product-info">
+                        <h3>JBL Tour One M2</h3>
+                        <p class="product-desc">Легендарний звук JBL Pro Sound</p>
+                        <div class="product-bottom">
+                            <span class="price">11 499 ₴</span>
+                            <button class="btn btn-buy">Купити</button>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Best Electronics. Всі права захищено.</p>
+    </footer>
 </body>
 </html>
